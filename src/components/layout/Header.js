@@ -10,7 +10,7 @@ export const Header = () => {
         </div>
         <div className="settings">
           <ul>
-            <li>+</li>
+            <li className="settings_add">+</li>
             <li>
               <FaPizzaSlice />
             </li>
