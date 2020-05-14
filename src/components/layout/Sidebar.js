@@ -18,7 +18,7 @@ export const Sidebar = () => (
       </li>
     </ul>
 
-    <div className="side__middle">
+    <div className="sidebar__middle">
       <span><FaChevronDown /></span>
       <h2>Projects</h2>
     </div>
