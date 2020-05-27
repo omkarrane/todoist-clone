@@ -17,7 +17,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #202020;
   background-color: #fafafa;
-  font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -298,26 +297,31 @@ header {
     &:nth-child(1) {
       .sidebar__dot {
         color: #6accbc;
+        padding-bottom: 5%;
       }
     }
     &:nth-child(2) {
       .sidebar__dot {
         color: #fad003;
+        padding-bottom: 5%;
       }
     }
     &:nth-child(3) {
       .sidebar__dot {
         color: #ff8d85;
+        padding-bottom: 5%;
       }
     }
     &:nth-child(4) {
       .sidebar__dot {
         color: #ff9932;
+        padding-bottom: 5%;
       }
     }
     &:nth-child(5) {
       .sidebar__dot {
         color: #af38eb;
+        padding-bottom: 5%;
       }
     }
   }
