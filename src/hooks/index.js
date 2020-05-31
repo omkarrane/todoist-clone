@@ -33,6 +33,7 @@ export const useTasks = selectedProject => {
         ...task.data()
       }));
 
+
       /**
        * If the selectedProject === 'NEXT_7' then get all tasks having date from 7 days of todays date
        */

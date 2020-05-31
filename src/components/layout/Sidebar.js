@@ -12,15 +12,36 @@ export const Sidebar = () => {
   return (
     <div className="sidebar" data-testid="sidebar">
       <ul className="sidebar__generic">
-        <li data-testid="inbox" className="inbox">
+        <li 
+          data-testid="inbox" 
+          className={active === 'inbox' ? 'active' : undefined}
+          onClick={() => {
+            setActive('inbox');
+            setSelectedProject('INBOX');
+          }}
+        >
           <span><FaInbox /></span>
           <span className="sidebar__generic__inbox">Inbox</span>
         </li>
-        <li data-testid="today" className="today">
+        <li 
+          data-testid="today" 
+          className={active === 'today' ? 'active' : undefined}
+          onClick={() => {
+            setActive('today');
+            setSelectedProject('TODAY');
+          }}
+        >
           <span><FaRegCalendar /></span>
           <span className="sidebar__generic__today">Today</span>
         </li>
-        <li data-testid="next_7" className="next_7">
+        <li 
+          data-testid="next_7" 
+          className={active === 'next_7' ? 'active' : undefined}
+          onClick={() => {
+            setActive('next_7');
+            setSelectedProject('NEXT_7');
+          }}
+        >
           <span><FaRegCalendarAlt /></span>
           <span className="sidebar__generic__next_7">Next 7 days</span>
         </li>
