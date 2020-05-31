@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import moment from 'moment';
 import { firebase } from '../firebase';
-import { collatedTaskExist } from '../helpers';
+import { collatedTasksExist } from '../helpers';
 
 
 export const useTasks = selectedProject => {
@@ -19,7 +19,7 @@ export const useTasks = selectedProject => {
      * If the selectedProject is TODAY, then get tasks based on date
      * If the selectedProject is INBOX and selectedProject === 0, then get tasks where no date is specified
      */
-    unsubscribe = selectedProject && !collatedTaskExist(selectedProject)
+    unsubscribe = selectedProject && !collatedTasksExist(selectedProject)
       ? (unsubscribe = unsubscribe.where('projectId', '==', selectedProject))
       : selectedProject === 'TODAY'
         ? (unsubscribe = unsubscribe.where('date', '==', moment().format('DD/MM/YYYY')))
